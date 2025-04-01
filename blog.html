@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header>
+        <div class="bg-[#F9F7F3] h-32">
+            <nav class="max-w-6xl mx-auto flex justify-between items-center h-28">
+                <div>
+                    <button onclick="window.location.href='./index.html'" class="btn py-3 px-6 bg-[#B4F461]">BLog</button>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img class="w-11" src="./assets/logo.png" alt="">
+                    <h4 class="text-xl font-semibold">Donate Bangladesh</h4>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="font-medium text-xl text-gray-500">5500 BDT </p>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-6xl mx-auto mt-10">
+        <h1 class="text-3xl font-bold">Important FAQ</h1>
+        <div class="collapse collapse-arrow bg-base-100 border mt-8 border-base-300">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold">What is Document Object Model(DOM)?</div>
+            <div class="collapse-content text-sm">The DOM is a standard way for browsers to represent and interact with
+                HTML and XML documents.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">How do you select an element from the DOM?</div>
+            <div class="collapse-content text-sm">To select an element from the DOM, you can use `getElementById()`,
+                `getElementsByClassName()`, `getElementsByTagName()`, `querySelector()`, or `querySelectorAll()`.
+                `querySelector()` selects a single element, while `querySelectorAll()` selects multiple elements.</div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">What is event delegation in the context of the DOM, and why is it
+                useful?</div>
+            <div class="collapse-content text-sm">Event delegation is a technique in the DOM where a parent element
+                handles events for its child elements, even if those child elements are added dynamically. It works by
+                taking advantage of event bubbling, where events propagate up the DOM tree.
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

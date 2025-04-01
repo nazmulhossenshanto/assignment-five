@@ -1,1 +1,2 @@
-console.log('Index.js file added to html file.')
+console.log('index.js')
+
